@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--  this is xml file ref from site 
+
+<hibernate-mapping package="com.Pojo"> <class table="CART" name="Cart"> 
+	<id name="id" type="long"> <column name="cart_id" /> <generator class="identity" 
+	/> </id> <property name="Total" type="double"> <column name="total" /> </property> 
+	<property name="Name" type="string"> <column name="name" /> </property> <set 
+	table="ITEMS" name="items" fetch="select"> <key> <column name="cart_id" not-null="true" 
+	/> </key> <one-to-many class="Items" /> </set> </class> </hibernate-mapping> -->
+
+
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"https://hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.Pojo">
+
+	<class table="CART" name="Cart">
+		<id name="id" type="long">
+			<column name="cart_id" />
+			<generator class="identity" />
+		</id>
+
+		<property name="Total" type="double">
+			<column name="total" />
+		</property>
+		<property name="Name" type="string">
+
+			<column name="name" />
+		</property>
+
+		<set table="ITEMS" name="items" fetch="select">
+
+			<key>
+				<column name="cart_id" not-null="true" />
+			</key>
+			<one-to-many class="Items" />
+		</set>
+
+	</class>
+</hibernate-mapping>
+
