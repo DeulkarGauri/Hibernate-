@@ -10,7 +10,7 @@ import javax.persistence.InheritanceType;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "EMP")
+@Table(name = "T_EMP")
 @Inheritance(strategy = InheritanceType.TABLE_PER_CLASS)
 
 public class Employee {

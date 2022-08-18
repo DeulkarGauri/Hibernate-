@@ -11,24 +11,36 @@ import org.hibernate.annotations.CacheConcurrencyStrategy;
 
 @Entity
 @Cacheable
-@Cache(usage=CacheConcurrencyStrategy.READ_ONLY)
-@Table(name="Students")
+@Cache(usage = CacheConcurrencyStrategy.READ_ONLY)
+@Table(name = "Students")
+
+/***
+ * This is my pojo classs we enable an second level cache using annotation
+ * 
+ * @Entity 
+ * @Cacheable
+ *  @Cache(usage=CacheConcurrencyStrategy.READ_ONLY) it define 
+ *  the concurrency strategy
+ *  Read-only means caching will work for read only operation.
+ *  
+ * 
+ ***/
 public class Student {
-	
+
 	@Id
-	@Column(name="Roll_number")
+	@Column(name = "Roll_number")
 	private int roll_num;
-	@Column(name="Student_name")
+	@Column(name = "Student_name")
 	private String name;
-	@Column(name="City")
+	@Column(name = "City")
 	private String city;
-	
-	//no-arg constructor
+
+	// no-arg constructor
 	public Student() {
 
 	}
 
-	//parameterized constructor
+	// parameterized constructor
 	public Student(int roll_num, String name, String city) {
 		super();
 		this.roll_num = roll_num;
@@ -64,8 +76,4 @@ public class Student {
 	public void setCity(String city) {
 		this.city = city;
 	}
-	
-	
-	
-
 }

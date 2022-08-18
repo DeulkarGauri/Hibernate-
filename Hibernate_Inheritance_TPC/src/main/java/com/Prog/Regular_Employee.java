@@ -7,7 +7,7 @@ import javax.persistence.Entity;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "REGULAR_EMP")
+@Table(name = "T_REGULAR_EMP")
 @AttributeOverrides({ @AttributeOverride(name = "id", column = @Column(name = "id")),
 		@AttributeOverride(name = "name", column = @Column(name = "name")) })
 public class Regular_Employee extends Employee {

@@ -10,7 +10,7 @@
 
 		<property name="connection.driver_class"> com.mysql.cj.jdbc.Driver</property>
 
-		<property name="connection.url"> jdbc:mysql://localhost:3306/manu </property>
+		<property name="connection.url"> jdbc:mysql://localhost:3306/emp </property>
 
 		<property name="connection.username">root </property>
 

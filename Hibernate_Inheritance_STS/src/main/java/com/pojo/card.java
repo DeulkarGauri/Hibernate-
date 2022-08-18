@@ -5,7 +5,7 @@ import javax.persistence.DiscriminatorValue;
 import javax.persistence.Entity;
 
 @Entity
-@DiscriminatorValue(value="card")
+@DiscriminatorValue(value="S_card")
 public class card extends Payment{
 
 	@Column(name="card_no")

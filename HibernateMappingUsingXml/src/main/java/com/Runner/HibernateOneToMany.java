@@ -19,6 +19,7 @@ public class HibernateOneToMany {
 		Cart c1 = new Cart();
 		
 		c1.setName("Sakshi");
+		
 		Cart c2 = new Cart();
 		c1.setName("Shweta");
 		
@@ -65,7 +66,7 @@ public class HibernateOneToMany {
 			session = Factory.openSession();
 			 tx = session.beginTransaction();
 		
-		 session.save(c1);
+		 session.persist(c1);
 		 session.save(item1);
 		 session.save(item2);
 		 session.save(item3);

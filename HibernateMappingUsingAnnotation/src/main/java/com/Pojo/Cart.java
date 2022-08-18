@@ -2,6 +2,7 @@ package com.Pojo;
 
 import java.util.Set;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -9,12 +10,15 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
+
+import org.hibernate.annotations.Cascade;
 @Entity
-@Table(name="Cart")
+@Table(name="A_Cart")
 public class Cart {
 
 	@Id
-	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	@GeneratedValue(strategy=GenerationType.AUTO)
+	
 	@Column(name="cart_id")
 	private long id;
 	
@@ -24,7 +28,7 @@ public class Cart {
 	@Column(name="CART_OWNER")
 	private String Name;
 	
-	@OneToMany(mappedBy="cart")
+	@OneToMany(mappedBy="cart" )
 	private Set<Items> items ;
 	
 	public Cart() {

@@ -1,12 +1,14 @@
 package com.demo.program;
 
+import javax.persistence.Access;
+
 public class EmployeeClass {
   private int id;
   private String Name;
   private String Surname;
   private int Salary;
  
-  
+
   public EmployeeClass(int id, String name, String surname, int salary) {
 	super();
 	this.id = id;

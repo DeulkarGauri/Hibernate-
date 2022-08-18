@@ -31,9 +31,9 @@
 
 		<property name="cache.region.factory_class">org.hibernate.cache.ehcache.internal.EhcacheRegionFactory</property>
 		<property name="cache.use_second_level_cache">true</property>
-		
-		
-		<mapping class="com.prog.Student"/>
+
+
+		<mapping class="com.prog.Student" />
 
 	</session-factory>
 </hibernate-configuration>

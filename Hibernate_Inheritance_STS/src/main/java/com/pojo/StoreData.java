@@ -16,17 +16,17 @@ public class StoreData {
 		
 		
 		Payment p = new Payment();
-		p.setAmount(5100);
+		p.setAmount(5100000);
 
 		card c = new card();
-		c.setAmount(1000);
-		c.setCard_no(33558882);
-		c.setCard_type("VISA");
+		c.setAmount(10000);
+		c.setCard_no(23558882);
+		c.setCard_type("SBI");
 
 		Cheque chq = new Cheque();
-		chq.setAmount(11100);
-		chq.setCheque_no(010036);
-		chq.setCheque_type("ORDER");
+		chq.setAmount(21100);
+		chq.setCheque_no(01023036);
+		chq.setCheque_type("SELF CHEQUE");
 
 		session.persist(p);
 		session.persist(c);
