@@ -10,6 +10,7 @@ public class Cart {
 
 	private Set<Item> items;
 	
+	//getter setter
 	public double getTotal() {
 		return total;
 	}

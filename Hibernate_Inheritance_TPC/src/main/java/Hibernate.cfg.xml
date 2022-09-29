@@ -10,7 +10,7 @@
 
 		<property name="connection.driver_class"> com.mysql.cj.jdbc.Driver</property>
 
-		
+
 
 		<property name="connection.url"> jdbc:mysql://localhost:3306/Inheritance </property>
 
@@ -23,13 +23,13 @@
 		<property name="hbm2ddl.auto">create </property>
 		<property name="show_sql"> true</property>
 		<property name="format_sql">true</property>
-		
+
 
 		<!-- <mapping class = "com.demo.program.EmployeeClass"/> -->
 
-<mapping class = "com.Prog.Employee"/>
-<mapping class = "com.Prog.Regular_Employee"/>
-<mapping class = "com.Prog.Contract_Employee"/>
+		<mapping class="com.Prog.Employee" />
+		<mapping class="com.Prog.Regular_Employee" />
+		<mapping class="com.Prog.Contract_Employee" />
 		<!-- List of XML mapping files -->
 		<!-- <mapping resource="Employee.hbm.xml" /> -->
 

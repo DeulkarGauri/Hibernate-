@@ -19,5 +19,6 @@ public class FetchData {
 		
 		EmployeeClass emp=(EmployeeClass)session.get(EmployeeClass.class, 101);
 		System.out.println(emp.getId());
+		
 	}
 }
